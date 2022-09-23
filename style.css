@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Fjalla+One&family=Fredoka+One&family=Fuzzy+Bubbles&family=Genos:wght@500&family=Koulen&family=Krona+One&family=Lexend+Deca:wght@200&family=M+PLUS+Rounded+1c:wght@300&family=Mako&family=Merriweather+Sans:wght@300&family=Montserrat:wght@100&family=Open+Sans&family=Press+Start+2P&family=Ramabhadra&family=Roboto:wght@300&family=Tajawal:wght@200&family=Titillium+Web:wght@300&family=Ubuntu:wght@300&display=swap');
+ 
+*{
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #c72727;
+  --light-color: #f3f3f3;
+  --dark-color: #333;
+  --link-color: #333;
+  --sports-color: #f99500;
+  --arts-color: #a66bbe;
+  --tech-color: #009cff;
+  --science-color: #3bd142;
+  --food-color: #d1483b;
+}
+
+:root, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--light-color);
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* maybe remove this */
+  overflow: none;
+}
+
+/* Nav Bar */
+nav {
+  height: 200px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+}
+
+nav a img {
+  height: 3rem;
+  margin-bottom: 20px;
+}
+
+a {
+color: var(--link-color);
+font-style: none;
+text-decoration: none;
+}
+
+ul {
+  display:flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+li a:hover {
+  color: purple;
+}
+
+
+main {
+  margin: 0;
+  /* margin-top: 600px; */
+  width: 90%;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+
+.showcase {
+  background-image: url('https://hopeful-kepler-e0ecef.netlify.app/images/robot.jpg') ;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  width: 100%;
+  padding: 2rem;
+  color: white;
+
+}
+
+.showcase p {
+  width: 50%;
+  font-size: 20px;
+}
+
+.showcase h3 a{
+  font-size: 2rem;
+  /* font-family: sans-serif, Arial, Helvetica, sans-serif; */
+  color: whitesmoke;
+}
+
+.showcase .general-topic {
+  width: 80px;
+}
+
+.btn {
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  /* border-radius: 5px; */
+}
+
+.btn:hover {
+  opacity: .9;
+}
+
+/* articles container */
+@media screen and (min-width: 600px){
+  .articles {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    width: 100%;
+    height: 100%;
+    /* border: 3px solid green; */
+  }
+}
+
+
+/* @media (min-width:600px) {
+  .articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  width: 85%;
+  }
+ } */
+
+article {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 15px;
+  /* width: 95%; */
+  background-color: white;
+  /* border-radius: 10px; */
+}
+
+article img {
+  width: 100%;
+  /* height: 100%; */
+  /* border-radius: 5px; */
+}
+
+article h3 {
+  font-size: 2rem;
+}
+
+.general-topic {
+  color: white;
+  font-size: 9px;
+  text-transform: uppercase;
+  padding: 5px;
+  border-radius: 30px;
+  align-self: flex-start;
+  width: 60px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.arts {
+  background-color: var(--arts-color);
+}
+.science {
+  background-color: var(--science-color);
+}
+.sports{
+  background-color: var(--sports-color);
+}
+.food{
+  background-color: var(--food-color);
+}
+.sports{
+  background-color: var(--sports-color);
+}
+
+/* Footer */
+footer {
+  width: 90%;
+  background-color: var(--dark-color);
+  color: white;
+  /* padding: 3rem; */
+  padding: 32px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+  
+}
+
+footer div {
+  width: 30%;
+}
+
+footer div img {
+  width: 220px;
+  margin-top: ;
+}
+
+footer div h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+footer div ul {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+footer div ul li {
+  color: white;
+}
+
+footer div ul li:hover {
+  color: red;
+}
+
+footer :nth-child(-n+3) {
+  margin-bottom: 40px;
+}
+
+/* .subscribe {
+  border: none;
+  padding: 5px 8px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 3px 5px;
+
+} */
